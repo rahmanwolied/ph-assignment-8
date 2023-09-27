@@ -16,7 +16,8 @@
     "react-hot-toast": "^2.4.1",
     "react-minimal-pie-chart": "^8.4.0",
     "react-router-dom": "^6.16.0",
-    "recharts": "^2.8.0"
+    "recharts": "^2.8.0",
+    "surge": "^0.23.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
