@@ -6,11 +6,13 @@ import Cards from '../components/Cards';
 import Banner from '../components/Banner';
 import Donations from '../components/Donations';
 import Statistics from '../components/Statistics';
+import NotFound from '../components/NotFound';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Root></Root>,
+		errorElement: <NotFound />,
 		children: [
 			{
 				path: '/',
