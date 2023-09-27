@@ -5,6 +5,7 @@ import Details from '../components/Details';
 import Cards from '../components/Cards';
 import Banner from '../components/Banner';
 import Donations from '../components/Donations';
+import Statistics from '../components/Statistics';
 
 const router = createBrowserRouter([
 	{
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
 							});
 							return filtered;
 						},
+					},
+					{
+						path: '/statistics',
+						element: <Statistics />,
+						loader: () => fetch('../../public/data/data.json'),
 					},
 				],
 			},
