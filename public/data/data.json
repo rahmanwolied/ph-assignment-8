@@ -1,0 +1,134 @@
+[
+	{
+		"id": 1,
+		"picture": "https://i.ibb.co/17vKXP7/Education.png",
+		"title": "Support Education",
+		"category": "Education",
+		"category_bg": "#FF444A33",
+		"card_bg": "#FF444A26",
+		"text_button_bg": "#FF444A",
+		"description": "Help children access quality education by supporting educational programs, providing resources, and creating opportunities for students to thrive in their learning journey.",
+		"price": 50
+	},
+	{
+		"id": 2,
+		"picture": "https://i.ibb.co/17vKXP7/Education.png",
+		"title": "Scholarship Fund",
+		"category": "Education",
+		"category_bg": "#FF444A33",
+		"card_bg": "#FF444A26",
+		"text_button_bg": "#FF444A",
+		"description": "Contribute to the Scholarship Fund to make higher education accessible to deserving students who need financial aid, empowering them to pursue their academic goals.",
+		"price": 30
+	},
+	{
+		"id": 3,
+		"picture": "https://i.ibb.co/TPbT5yj/Health.png",
+		"title": "Medical Outreach",
+		"category": "Health",
+		"category_bg": "#0052FF33",
+		"card_bg": "#0052FF26",
+		"text_button_bg": "#0052FF",
+		"description": "Join our Medical Outreach program to provide essential healthcare services to underserved communities, improving the well-being of those in need.",
+		"price": 75
+	},
+	{
+		"id": 4,
+		"picture": "https://i.ibb.co/TPbT5yj/Health.png",
+		"title": "Nutrition Program",
+		"category": "Health",
+		"category_bg": "#0052FF33",
+		"card_bg": "#0052FF26",
+		"text_button_bg": "#0052FF",
+		"description": "Support our Nutrition Program, dedicated to combating malnutrition among children, ensuring they have access to nutritious meals and a healthy future.",
+		"price": 40
+	},
+	{
+		"id": 5,
+		"picture": "https://i.ibb.co/brFFKtJ/Clothing.png",
+		"title": "Warm Clothes Drive",
+		"category": "Clothing",
+		"category_bg": "#79C23F33",
+		"card_bg": "#79C23F26",
+		"text_button_bg": "#79C23F",
+		"description": "Make a difference by contributing to our Warm Clothes Drive. Provide winter clothing to those in need, helping them stay warm during the cold months.",
+		"price": 20
+	},
+	{
+		"id": 6,
+		"picture": "https://i.ibb.co/brFFKtJ/Clothing.png",
+		"title": "Dress for Success",
+		"category": "Clothing",
+		"category_bg": "#79C23F33",
+		"card_bg": "#79C23F26",
+		"text_button_bg": "#79C23F",
+		"description": "Empower individuals to access professional attire with our Dress for Success initiative. Your support helps boost career opportunities and self-confidence.",
+		"price": 35
+	},
+	{
+		"id": 7,
+		"picture": "https://i.ibb.co/4mmM6Yt/Food.png",
+		"title": "Food Bank Donation",
+		"category": "Food",
+		"category_bg": "#F8714733",
+		"card_bg": "#F8714726",
+		"text_button_bg": "#F87147",
+		"description": "Partner with us to support a local food bank in feeding the hungry. Your contribution makes a meaningful impact on the lives of those facing food insecurity.",
+		"price": 10
+	},
+	{
+		"id": 8,
+		"picture": "https://i.ibb.co/4mmM6Yt/Food.png",
+		"title": "Meal Sponsorship",
+		"category": "Food",
+		"category_bg": "#F8714733",
+		"card_bg": "#F8714726",
+		"text_button_bg": "#F87147",
+		"description": "Provide meals to those in need for a week through our Meal Sponsorship program. Your generosity ensures that no one goes to bed hungry.",
+		"price": 50
+	},
+	{
+		"id": 9,
+		"picture": "https://i.ibb.co/17vKXP7/Education.png",
+		"title": "Library Expansion",
+		"category": "Education",
+		"category_bg": "#FF444A33",
+		"card_bg": "#FF444A26",
+		"text_button_bg": "#FF444A",
+		"description": "Help build a larger library for students to access a wide range of educational resources. Your contribution supports a brighter future through knowledge.",
+		"price": 60
+	},
+	{
+		"id": 10,
+		"picture": "https://i.ibb.co/TPbT5yj/Health.png",
+		"title": "Vaccination Campaign",
+		"category": "Health",
+		"category_bg": "#0052FF33",
+		"card_bg": "#0052FF26",
+		"text_button_bg": "#0052FF",
+		"description": "Join our Vaccination Campaign to support a crucial vaccination drive in your community. Protect lives and promote public health with your contribution.",
+		"price": 25
+	},
+	{
+		"id": 11,
+		"picture": "https://i.ibb.co/brFFKtJ/Clothing.png",
+		"title": "Back-to-School Clothing",
+		"category": "Clothing",
+		"category_bg": "#79C23F33",
+		"card_bg": "#79C23F26",
+		"text_button_bg": "#79C23F",
+		"description": "Help kids start the school year well-dressed and confident by supporting our Back-to-School Clothing initiative. Education begins with confidence.",
+		"price": 15
+	},
+	{
+		"id": 12,
+		"picture": "https://i.ibb.co/4mmM6Yt/Food.png",
+		"title": "Emergency Food Relief",
+		"category": "Food",
+		"category_bg": "#F8714733",
+		"card_bg": "#F8714726",
+		"text_button_bg": "#F87147",
+		"description": "Provide immediate food assistance to families facing emergencies with our Emergency Food Relief program. Your help can be a lifeline in times of crisis.",
+		"price": 45
+	}
+]
