@@ -6,6 +6,15 @@ const Donations = () => {
 	const [showAll, setShowAll] = useState(false);
 
 	let items = useLoaderData();
+	if (items.length === 0){
+		return (
+			<div className='flex justify-center items-center h-screen'>
+				<h1 className='text-2xl'>
+				You dont have any donations yet.
+				</h1>
+			</div>
+			)
+	}
 	if (!showAll) {
 		items = items.slice(0, 4);
 	}

@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 	const items = (
@@ -28,9 +28,9 @@ const Navbar = () => {
 							{items}
 						</ul>
 					</div>
-					<a className="btn btn-ghost normal-case text-xl">
+					<Link to='/' className="btn btn-ghost normal-case text-xl">
 						<img className="h-[100%]" src="https://i.ibb.co/f0PRD14/Logo.png" alt="Donation Campaign" />
-					</a>
+					</Link>
 				</div>
 				<div className="navbar-center hidden lg:flex">
 					<ul className="menu menu-horizontal px-1">{items}</ul>
