@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Card = ({ item }) => {
 	const { id, picture, category, title, card_bg, text_button_bg, category_bg } = item;
@@ -27,5 +27,7 @@ const Card = ({ item }) => {
 		</Link>
 	);
 };
-
+Card.propTypes = {
+	item: PropTypes.object.isRequired,
+};
 export default Card;

@@ -1,8 +1,17 @@
-import Banner from './Banner';
 import Navbar from './Navbar';
-import Cards from './Cards';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import DonationsAPIContext from '../contexts/DonationsAPIContext';
+import LocalDonationsContext from '../contexts/LocalDonationsContext';
+
 const Home = () => {
+	const { donations, localDonations } = useLoaderData();
+	const [local, setLocal] = useState(localDonations);
+	const [donationSearch, setDonationSearch] = useState('');
+
+	useEffect(() => {
+		setLocal(localDonations);
+	}, [localDonations]);
 	return (
 		<>
 			<div className="relative">
@@ -10,7 +19,11 @@ const Home = () => {
 					<Navbar></Navbar>
 				</div>
 			</div>
-			<Outlet></Outlet>
+			<DonationsAPIContext.Provider value={donations}>
+				<LocalDonationsContext.Provider value={[local, setLocal]}>
+					<Outlet context={[donationSearch, setDonationSearch]}></Outlet>
+				</LocalDonationsContext.Provider>
+			</DonationsAPIContext.Provider>
 		</>
 	);
 };

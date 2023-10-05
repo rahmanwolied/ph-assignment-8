@@ -17,6 +17,19 @@ const router = createBrowserRouter([
 			{
 				path: '/',
 				element: <Home />,
+				loader: async () => {
+					try {
+						const data = await fetch('/data/data.json');
+						const donations = await data.json();
+						const Ids = JSON.parse(localStorage.getItem('donations')) ? JSON.parse(localStorage.getItem('donations')) : [];
+						const localDonations = donations.filter((item) => {
+							return Ids.includes(item.id.toString());
+						});
+						return { donations, localDonations };
+					} catch (error) {
+						return error;
+					}
+				},
 				children: [
 					{
 						path: '/',
@@ -30,25 +43,14 @@ const router = createBrowserRouter([
 					{
 						path: '/:id',
 						element: <Details />,
-						loader: () => fetch('/data/data.json'),
 					},
 					{
 						path: '/donations',
 						element: <Donations />,
-						loader: async () => {
-							const Ids = JSON.parse(localStorage.getItem('donations')) ? JSON.parse(localStorage.getItem('donations')) : [];
-							const fetc = await fetch('/data/data.json');
-							const info = await fetc.json();
-							let filtered = info.filter((item) => {
-								return Ids.includes(item.id);
-							});
-							return filtered;
-						},
 					},
 					{
 						path: '/statistics',
 						element: <Statistics />,
-						loader: () => fetch('/data/data.json'),
 					},
 				],
 			},
